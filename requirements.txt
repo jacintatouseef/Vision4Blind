@@ -77,3 +77,6 @@ websocket-client==1.8.0
 Werkzeug==3.0.1
 wsproto==1.2.0
 yt-dlp==2025.6.9
+ultralytics
+pytesseract
+opencv-python-headless

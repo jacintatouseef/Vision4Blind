@@ -3,11 +3,17 @@ import cv2
 import numpy as np
 from ultralytics import YOLO
 import pytesseract
+import os
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)  # debug=False for production!
 
 # -----------------------
 # Tesseract path (Windows)
 # -----------------------
-pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+# pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 # -----------------------
 # Load YOLO model (object detection)
